@@ -42,6 +42,12 @@ What’s 0 Kelvin in Fahrenheit?
 
 
 
+
+
+
+
+
+
 TASK 2
 Built a Magic Eight Ball(for telling fortunes) with the following instructions:
 
@@ -64,6 +70,13 @@ Built a Magic Eight Ball(for telling fortunes) with the following instructions:
 9.Write aconsole.log()to print the Magic Eight Ball’s answer, the value of theeightBallvariable.
 
 10.Run your program a few times to see random results appear in the console!
+
+
+
+
+
+
+
 
 
 
