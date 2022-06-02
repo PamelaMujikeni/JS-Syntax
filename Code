@@ -1,0 +1,123 @@
+TASK 1
+
+//kelvin temp as a constant var type
+
+const kelvin = 293;
+
+//converting kelvin temp to celcius 
+
+const celsius = kelvin - 273;
+
+//Converts celsius to fahrenheit&store it in a changable let var type 
+
+let Fahrenheit = celsius * (9/5) + 32;
+
+//Using floor() method to round down Fahrenheit result.
+
+var fahrenheit = Math.floor(Fahrenheit);
+
+// printing temp to console
+
+console.log(`The temperature is ${fahrenheit} degress Fahrenheit`);
+
+// 0 Kelvin in Fahrenheit returned -460 degrees
+
+
+
+
+
+TASK 2
+
+// Task2
+
+// prompt user to enter name
+
+var userName = prompt("Enter your name: ");
+
+// print greeting + user input
+
+userName ? console.log(`Hello ${userName}!`) : 
+console.log('Hello !');
+
+// i can prompt user to enter question but thought of an example
+
+const userQuestion = 'if the game is on tonight?!';
+console.log(`${userName} wants to know ${userQuestion}.`);
+
+// generate random eightball and store it in a let var 
+
+let itrandomNumber = Math.floor(Math.random() * 8);
+
+// generated eightball will be stored in a let var too to allow changes
+
+let eightBall = ' ';
+
+// control flow that takes in the generated randomNumber above, and then assigns eightBall to a reply that a Magic Eight Ball would return.
+
+// 
+if (itrandomNumber == 0) {
+  eightBall = 'It is certain';
+  } else if (itrandomNumber == 1) {
+    eightBall = 'it is decidedly so';
+      } else if (itrandomNumber == 2) {
+        eightBall = 'reply hazy try again';
+          } else if (itrandomNumber == 3) {
+            eightBall = 'cannot predict now';
+              } else if (itrandomNumber == 4) {
+                eightBall = 'do not count on it';
+                  } else if (itrandomNumber == 5) {
+                    eightBall = 'my sources say no';
+                        } else if (itrandomNumber == 6) {
+                        eightBall = 'outlook not so good';
+  } else {
+  eightBall = 'Signs point to yes';
+}
+
+// print answer to console
+
+console.log(eightBall);
+
+
+
+
+
+
+TASK 3
+
+
+// race number will be generated randomly 
+
+let raceNumber = Math.floor(Math.random() * 1000);
+
+// check if runner registered early
+
+const earlyRegistered = true;
+
+// runner age contained in let var to allow changes
+
+let runnerAge = 17; 
+
+// condition for if runner is an adult and registered early
+
+if (runnerAge > 18 && earlyRegistered) { 
+  raceNumber += 1000;
+  console.log(`You will race at 9:30 am and your Race Number is      ${raceNumber}.`);
+} 
+  
+  // an adult but didn't register early
+  
+else if (runnerAge > 18 && !earlyRegistered) {
+  console.log(`You will race at 11:00 am and your Race Number is ${raceNumber}.`);
+}
+  // if not an adult then they will race at 12:30
+  
+ else if (runnerAge < 18) {
+  console.log(`You will race at 12:30 pm and your Race Number is ${raceNumber}.`);
+} 
+   
+  // else they should seek info from registration desk
+   
+else {
+  console.log('Please refer to the registation desk.');
+}
+
